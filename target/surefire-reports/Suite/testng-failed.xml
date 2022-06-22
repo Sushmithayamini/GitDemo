@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="TestCases.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="TestLoginPage(failed)">
+    <classes>
+      <class name="TestCases.LoginPage">
+        <methods>
+          <include name="browsrInitialization"/>
+          <include name="tearDown"/>
+          <include name="homePage" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- TestCases.LoginPage -->
+    </classes>
+  </test> <!-- TestLoginPage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

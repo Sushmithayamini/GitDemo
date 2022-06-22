@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TestCases.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="TestGetTitle(failed)">
+    <classes>
+      <class name="TestCases.GetTitle">
+        <methods>
+          <include name="tearDown"/>
+          <include name="browsrInitialization"/>
+          <include name="LandingPageText"/>
+        </methods>
+      </class> <!-- TestCases.GetTitle -->
+    </classes>
+  </test> <!-- TestGetTitle(failed) -->
+  <test thread-count="5" parallel="tests" name="TestNavigationBar(failed)">
+    <classes>
+      <class name="TestCases.NavigationBar">
+        <methods>
+          <include name="LandingPageText"/>
+          <include name="browsrInitialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.NavigationBar -->
+    </classes>
+  </test> <!-- TestNavigationBar(failed) -->
+  <test thread-count="5" parallel="tests" name="TestHomePage(failed)">
+    <classes>
+      <class name="TestCases.HomePage">
+        <methods>
+          <include name="browsrInitialization"/>
+          <include name="tearDown"/>
+          <include name="Homepagetc"/>
+        </methods>
+      </class> <!-- TestCases.HomePage -->
+    </classes>
+  </test> <!-- TestHomePage(failed) -->
+  <test thread-count="5" parallel="tests" name="TestLoginPage(failed)">
+    <classes>
+      <class name="TestCases.LoginPage">
+        <methods>
+          <include name="browsrInitialization"/>
+          <include name="tearDown"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- TestCases.LoginPage -->
+    </classes>
+  </test> <!-- TestLoginPage(failed) -->
+</suite> <!-- Failed suite [Suite] -->
