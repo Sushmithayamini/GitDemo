@@ -35,7 +35,7 @@ public class GetTitle extends Base{
 	public void BannerTitle() {
 		lp= new LandingPage(driver);
 		Assert.assertEquals(lp.getBannerTitle().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
-		
+		System.out.println("Github testing");
 	}
 
 	
